@@ -17,6 +17,7 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 - `dist/index.html`: 공통 HTML 셸과 헤더·푸터
 - `site.config.json`: 브랜드명·기본 제목·설명을 관리하는 공통 설정
 - `dist/styles.css`: 전체 디자인과 반응형 스타일
+- `dist/home-refresh.css`: 메인 화면의 생애주기 그래프, 단계 탐색, 자료 미리보기, 이야기 섹션 스타일
 - `dist/app.js`: 콘텐츠 데이터, 라우팅, 진단, 검색, 필터, 브라우저 저장
 - `dist/downloads/`: XLSX·DOCX 빈 양식과 가상 작성 예시 40개
 - `tools/build-sheets.mjs`, `tools/build-docs.py`: 양식 생성 스크립트
@@ -26,3 +27,5 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 ## 다시 생성
 
 브랜드명은 `site.config.json`에서 관리합니다. 양식이나 경로를 수정한 뒤 생성 스크립트를 실행하고 `node build-static.mjs`를 실행합니다. `dist`가 최종 배포 디렉터리입니다.
+
+메인 화면은 상황 선택 → 생애주기 준비 → 7단계 실행 패널 → 공식 지원 경로 → 실제 양식 미리보기 → 실전 이야기 순서로 구성됩니다. 단계 탭 탐색은 저장된 진단 결과를 변경하지 않으며, 진단 결과는 기존 `gs-navi` 로컬 저장 키에 유지됩니다.
