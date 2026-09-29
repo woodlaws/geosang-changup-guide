@@ -1,0 +1,16 @@
+{
+  "name": "거상창업가이드",
+  "short_name": "거상창업가이드",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafbfd",
+  "theme_color": "#142c49",
+  "lang": "ko-KR",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
