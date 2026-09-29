@@ -20,6 +20,7 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 - `dist/home-refresh.css`: 메인 화면의 생애주기 그래프, 단계 탐색, 자료 미리보기, 이야기 섹션 스타일
 - `dist/samantha.css`: 사만다·모니카 공통 안내, 로드맵 허브·상세 화면의 반응형 스타일
 - `public/assets/personas/`: 상황 선택 카드의 원본 PNG와 640px WebP·AVIF 최적화 이미지
+- `public/assets/lifecycle/lifecycle-original.png`: 0세부터 100세까지 소득·소비와 창업 활동을 보여주는 생애주기 원본 그래프
 - `public/assets/samantha/`: 사만다 단독 인물 원본 PNG와 640px WebP·AVIF 최적화 이미지
 - `public/assets/monica/`: 모니카 단독 인물 원본 PNG와 WebP·AVIF 최적화 이미지
 - `dist/app.js`: 콘텐츠 데이터, 라우팅, 진단, 검색, 필터, 브라우저 저장

@@ -18,8 +18,11 @@
 .chart-legend{display:flex;gap:18px;white-space:nowrap;font-size:14px;font-weight:800;color:var(--text)}
 .chart-legend span{display:flex;align-items:center;gap:8px}
 .chart-legend i{display:block;width:34px;height:4px;border-radius:9px;background:#3f6fe8}
-.chart-legend .legend-expense i{height:0;border-top:4px dashed #d98261;background:none}
-.lifecycle-chart{margin:30px 0 22px;padding:24px 28px 16px;background:#fff;border:1px solid #e7e0d8;border-radius:22px;box-shadow:0 16px 44px rgba(51,61,73,.07)}
+.chart-legend .legend-expense i{background:#e01722}
+.lifecycle-chart{margin:30px 0 22px;padding:12px 12px 16px;background:#fff;border:1px solid #e7e0d8;border-radius:22px;box-shadow:0 16px 44px rgba(51,61,73,.07)}
+.lifecycle-image-link{display:block;width:100%}
+.lifecycle-original{display:block;width:100%;height:auto;aspect-ratio:3028/1390;object-fit:contain}
+.lifecycle-mobile-guide,.lifecycle-open-original{display:none}
 .lifecycle-chart svg{display:block;width:100%;height:auto;max-height:360px;overflow:visible}
 .chart-axis{stroke:#9dadbd;stroke-width:2}.chart-guide{stroke:#dbe2e9;stroke-width:1;stroke-dasharray:6 8}
 .income-area{fill:url(#incomeFill)}.expense-area{fill:url(#expenseFill)}
@@ -27,7 +30,7 @@
 .curve-label rect{fill:#fff;stroke-width:2}.curve-label text{font:800 15px Pretendard,"Noto Sans KR",sans-serif;text-anchor:middle}
 .income-label rect{stroke:#3f6fe8}.income-label text{fill:#2e59be}.expense-label rect{stroke:#d98261}.expense-label text{fill:#a9583d}
 .axis-label{fill:#536b83;font:800 16px Pretendard,"Noto Sans KR",sans-serif;text-anchor:middle}
-.lifecycle-chart figcaption{margin-top:6px;text-align:center;color:var(--muted);font-size:14px}
+.lifecycle-chart figcaption{margin:12px 8px 0;text-align:center;color:var(--muted);font-size:14px}
 .lifecycle-actions{justify-content:center}.lifecycle-actions .btn{min-width:220px}
 .roadmap-explorer{background:#f3f6f8}
 .stage-tabs{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:28px}
@@ -58,3 +61,9 @@
 @media(max-width:700px){.situation-section{padding:48px 0}.situation-intro{margin-bottom:20px;font-size:15px}.situation-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.situation-card{padding:9px 9px 15px;border-radius:20px}.situation-picture{border-radius:14px}.situation-body{min-height:132px;padding:14px 5px 0}.situation-title-row{font-size:17px}.situation-description{font-size:14px;line-height:1.5}.lifecycle-intro{align-items:start;flex-direction:column;gap:18px}.chart-legend{width:100%;justify-content:flex-start;flex-wrap:wrap}.lifecycle-chart{margin-top:20px;padding:12px 8px}.lifecycle-chart svg{min-height:230px}.curve-label text{font-size:14px}.income-label{transform:translate(-35px,14px)}.expense-label{transform:translate(12px,-4px)}.axis-label{font-size:15px}.lifecycle-chart figcaption{text-align:left;padding:0 8px}.stage-panel{padding:20px}.stage-panel-head,.stage-panel-foot{align-items:flex-start;flex-direction:column}.stage-example-note{text-align:left}.stage-panel-grid{grid-template-columns:1fr;gap:20px}.stage-column{padding-bottom:8px}.resource-recommendations{grid-template-columns:1fr}.document-sheet{padding:18px}.document-sheet-head h3{font-size:20px}.document-downloads{flex-direction:column}.document-downloads .btn{width:100%}.featured-story .body{padding:22px}.founder-card{padding:26px}.founder-card p{font-size:16px}}
 @media(max-width:420px){.situation-title-row{font-size:16px}.situation-arrow{font-size:22px}.lifecycle-chart svg{min-height:210px}.curve-label rect{width:104px}.stage-tabs button{min-width:112px}.resource-recommendations button{padding:15px 12px}.resource-recommendations li>a{padding:15px 10px}.resource-row-copy strong{font-size:14px}}
 @media(max-width:360px){.situation-grid{grid-template-columns:1fr}.situation-card{padding:11px 11px 18px}.situation-body{min-height:auto}.situation-title-row{font-size:18px}.situation-description{font-size:15px}}
+@media(max-width:700px){
+ .lifecycle-chart{padding:10px 6px 14px;overflow:hidden}
+ .lifecycle-mobile-guide{display:block;margin:0 6px 10px;color:var(--navy);font-size:15px;font-weight:800}
+ .lifecycle-open-original{display:inline-flex;align-items:center;min-height:44px;margin:12px 6px 0;color:var(--blue);font-size:15px;font-weight:900;text-decoration:underline;text-underline-offset:4px}
+ .lifecycle-chart figcaption{margin:8px 6px 0;padding:0;text-align:left;font-size:13px;line-height:1.6}
+}
