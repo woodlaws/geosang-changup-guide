@@ -129,3 +129,87 @@
  .samantha-hero-picture{width:96px;height:144px}
  .samantha-bubble p br{display:none}
 }
+
+/* Shared Samantha + Monica guide system */
+.guide-picture{display:block;flex:none;overflow:visible}
+.guide-picture img{display:block;width:100%;height:100%;object-fit:contain}
+.guide-mint img{filter:drop-shadow(0 14px 22px rgba(7,73,52,.15))}
+.guide-gold img{filter:drop-shadow(0 14px 22px rgba(126,83,18,.16))}
+.guide-callout{display:grid;gap:14px;padding:22px 24px;border:1px solid #d9e5e0;border-radius:20px;background:linear-gradient(135deg,#f3fbf8,#fff9ec 86%);box-shadow:0 12px 30px rgba(20,44,73,.07)}
+.guide-people{display:grid;grid-template-columns:1fr;gap:14px}
+.guide-mode-duo .guide-people{grid-template-columns:repeat(2,minmax(0,1fr))}
+.guide-person{display:grid;grid-template-columns:84px 1fr;align-items:center;gap:17px;min-width:0;padding:13px 16px;border-radius:16px}
+.guide-person-mint{background:#effaf5;border:1px solid #c6eadb}
+.guide-person-gold{background:#fff8e9;border:1px solid #eedcb5}
+.guide-callout-picture{width:84px;height:96px;align-self:end}
+.guide-copy{min-width:0}
+.guide-label,.guide-duo-label{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:900;letter-spacing:.02em}
+.guide-label:before{content:"";width:8px;height:8px;border-radius:50%;flex:none}
+.guide-person-mint .guide-label{color:#087445}.guide-person-mint .guide-label:before{background:#19b76b;box-shadow:0 0 0 4px #dcf7e9}
+.guide-person-gold .guide-label{color:#8b5b11}.guide-person-gold .guide-label:before{background:#c58a25;box-shadow:0 0 0 4px #f8eacb}
+.guide-copy p{margin:7px 0 0;color:var(--text);font-size:16px;line-height:1.6;word-break:keep-all}
+.guide-action{justify-self:start;margin-left:2px}
+.guide-callout-compact{padding:15px 18px}
+.guide-callout-compact .guide-person{grid-template-columns:68px 1fr;padding:9px 12px}
+.guide-callout-compact .guide-callout-picture{width:68px;height:78px}
+.guide-callout-compact .guide-copy p{font-size:15px}
+.duo-welcome{background:linear-gradient(180deg,#fff,#f8fbff)}
+.duo-welcome-head{max-width:760px;margin-bottom:22px}
+.duo-welcome .guide-callout{padding:24px}
+.duo-welcome .guide-person{grid-template-columns:145px 1fr;min-height:190px}
+.duo-welcome .guide-callout-picture{width:145px;height:180px}
+.roadmap-explorer>.container>.guide-callout,.diagnosis>.guide-callout{margin:0 0 22px}
+.guide-following-grid{margin-top:24px}
+
+.roadmap-welcome{display:grid;grid-template-columns:minmax(220px,1fr) minmax(230px,.9fr);align-items:center;gap:14px;align-self:stretch}
+.roadmap-duo-figures{display:flex;align-items:flex-end;justify-content:center;height:330px}
+.roadmap-hero-character{width:170px;height:300px;margin:0 -12px}
+.guide-hero-bubble{position:relative;padding:20px;border:1px solid #d6e5df;border-radius:20px;background:rgba(255,255,255,.96);box-shadow:0 14px 34px rgba(20,44,73,.1)}
+.guide-hero-bubble:after{content:"";position:absolute;left:-9px;bottom:42px;width:16px;height:16px;border-left:1px solid #d6e5df;border-bottom:1px solid #d6e5df;background:#fff;transform:rotate(45deg)}
+.guide-duo-label{color:#315fea}.guide-hero-bubble p{margin:8px 0 0;font-size:16px;line-height:1.6}
+.roadmap-hub-summary>.guide-callout{align-self:stretch}
+.stage-detail-page>.container>div>.guide-callout{margin-bottom:18px}
+.note-dashboard-with-guide{margin-top:20px}
+
+@media(max-width:1050px){
+ .roadmap-hero-grid{grid-template-columns:1fr 460px}
+ .roadmap-welcome{grid-template-columns:220px 1fr}
+ .roadmap-duo-figures{height:285px}
+ .roadmap-hero-character{width:132px;height:250px}
+ .guide-mode-duo .guide-person{grid-template-columns:70px 1fr}
+ .guide-mode-duo .guide-callout-picture{width:70px;height:82px}
+}
+@media(max-width:760px){
+ .guide-mode-duo .guide-people{grid-template-columns:1fr}
+ .guide-callout,.guide-callout-compact{padding:14px}
+ .guide-person,.guide-callout-compact .guide-person{grid-template-columns:64px 1fr;gap:12px;padding:10px}
+ .guide-callout-picture,.guide-callout-compact .guide-callout-picture{width:64px;height:76px}
+ .guide-copy p,.guide-callout-compact .guide-copy p{font-size:14px}
+ .duo-welcome .guide-person{grid-template-columns:92px 1fr;min-height:124px}
+ .duo-welcome .guide-callout-picture{width:92px;height:116px}
+ .roadmap-welcome{grid-template-columns:180px 1fr;justify-content:start;gap:10px}
+ .roadmap-duo-figures{height:198px}
+ .roadmap-hero-character{width:102px;height:180px;margin:0 -10px}
+ .guide-hero-bubble{margin:12px 0 28px;padding:16px}
+ .guide-hero-bubble p{font-size:14px}
+}
+@media(max-width:420px){
+ .guide-label,.guide-duo-label{font-size:12px}
+ .duo-welcome .guide-person{grid-template-columns:72px 1fr;min-height:100px}
+ .duo-welcome .guide-callout-picture{width:72px;height:94px}
+ .roadmap-welcome{grid-template-columns:132px minmax(0,1fr);align-items:center}
+ .roadmap-duo-figures{height:156px}
+ .roadmap-hero-character{width:83px;height:145px;margin:0 -9px}
+ .guide-hero-bubble{padding:13px}
+ .guide-hero-bubble:after{left:-7px;width:12px;height:12px}
+ .guide-copy p,.guide-hero-bubble p{word-break:normal;overflow-wrap:anywhere}
+}
+@media(max-width:340px){
+ .guide-person,.guide-callout-compact .guide-person{grid-template-columns:54px 1fr;padding:8px}
+ .guide-callout-picture,.guide-callout-compact .guide-callout-picture{width:54px;height:68px}
+ .duo-welcome .guide-person{grid-template-columns:58px 1fr}
+ .duo-welcome .guide-callout-picture{width:58px;height:76px}
+ .roadmap-welcome{grid-template-columns:112px minmax(0,1fr)}
+ .roadmap-duo-figures{height:138px}
+ .roadmap-hero-character{width:70px;height:126px}
+}
